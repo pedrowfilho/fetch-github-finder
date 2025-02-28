@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GitHub Finder</title>
     <link rel="stylesheet" href="./src/css/reset.css" />
-    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <link rel="stylesheet" href="./src/css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,22 +16,23 @@
   </head>
   <body>
     
-    <h1 class="github-finder">GitHub Finder</h1>
+    <!-- <h1 class="github-finder">GitHub Finder</h1> -->
     <main class="container">
       <div class="header">
         <i class="devicon-github-original"></i>
-        <h2 class="title">GitHub Finder</h2>
+        <h1 class="title">GitHub Finder</h1>
       </div>
       <section class="conteudo-principal">
         <form id="form">
           <div class="search-container">
-            <input type="text" id="search" placeholder="Search GitHub username..." />
-            <button type="submit">Buscar</button>
+            <input type="text" id="input-search" placeholder="Usuário GitHub..." />
+            <button id="btn-search" type="submit">Buscar</button>
           </div>
         </form>
-        <div id="profile">
-
+        <div class="profile-data">
+          <div class="profile-info"></div>
         </div>
+        <div class="repositories section"></div>
       </section>
     </main>
 
