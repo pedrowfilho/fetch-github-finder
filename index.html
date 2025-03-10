@@ -12,11 +12,13 @@
       href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
   </head>
   <body>
-    
-    <!-- <h1 class="github-finder">GitHub Finder</h1> -->
     <main class="container">
       <div class="header">
         <i class="devicon-github-original"></i>
@@ -25,17 +27,24 @@
       <section class="conteudo-principal">
         <form id="form">
           <div class="search-container">
-            <input type="text" id="input-search" placeholder="Usuário GitHub..." />
+            <input
+              type="text"
+              id="input-search"
+              placeholder="Usuário GitHub..."
+            />
             <button id="btn-search" type="submit">Buscar</button>
           </div>
         </form>
         <div class="profile-data">
           <div class="profile-info"></div>
         </div>
-        <div class="repositories section"></div>
+        <div class="repositories-section"></div>
+        <div class="events-section">
+          <h2>Últimos eventos</h2>
+          <ul id="events-list" class="events-list"></ul>
+        </div>
       </section>
     </main>
-
     <script type="module" src="./src/js/index.js"></script>
   </body>
 </html>
