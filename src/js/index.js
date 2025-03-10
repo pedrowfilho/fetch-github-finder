@@ -46,4 +46,6 @@ async function getUserData(userName){
     
     screen.renderUser(user)
     screen.renderEvents(user.events)
+
+    console.log(repositoriesResponse)
 }

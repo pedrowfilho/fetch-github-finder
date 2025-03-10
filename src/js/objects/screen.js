@@ -7,7 +7,7 @@ const screen = {
                                             <h2>[ ${user.userName ?? 'Não possui nome de usuário cadastrado 😢'} ]</h2>
                                             <p>${user.bio ?? 'Não possui bio cadastrada 😢'}</p>
                                             <div class="profile-statistics">
-                                            <p>${user.followers} 🚀</p>
+                                                <p>${user.followers} 🚀</p>
                                                 <p>${user.following} 🚶...🚶</p>
                                             </div>
                                             <button class="botao-contato"><a href=${user.htmlUrl} target="_blank">contact me</a></button>
@@ -16,7 +16,12 @@ const screen = {
             document.querySelector('.profile-info').style.display = 'block';
 
         let repositoriesItens = ''
-        user.repositories.forEach(repo => repositoriesItens += `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>`)
+        user.repositories.forEach(repo => 
+                                    repositoriesItens += `<li>
+                                                            <a href="${repo.html_url}" target="_blank">${repo.name}</a>
+                                                            <p>⭐ ${repo.stargazers_count} | 🍴 ${repo.forks_count} | 👀 ${repo.watchers_count}</p>
+                                                            <p>🖥️ ${repo.language || "Não especificada"}</p>
+                                                        </li>`)
 
         if(user.repositories.length > 0){
             document.querySelector('.repositories-section').innerHTML = `<h2>Repositórios</h2>

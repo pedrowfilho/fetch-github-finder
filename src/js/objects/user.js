@@ -1,8 +1,8 @@
 const user = {
     avatarUrl: '',
     name: '',
-    bio: '',
     userName: '',
+    bio: '',
     followers: 0,
     following: 0,
     htmlUrl: '',

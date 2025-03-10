@@ -119,6 +119,14 @@ body {
   margin-bottom: 30px;
 }
 
+.repositories-section h2, 
+.events-section h2 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
 .repositories-section ul {
   display: flex;
   flex-wrap: wrap;
@@ -129,8 +137,9 @@ body {
 
 .repositories-section ul li {
   display: flex;
-  width: 240px;
-  height: 100px;
+  flex-direction: column;
+  width: 260px;
+  height: auto;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -138,15 +147,10 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   padding: 16px;
+  gap: 8px;
+  font-size: .8rem;
 }
 
-.repositories-section h2, 
-.events-section h2 {
-  font-size: 1.4rem;
-  color: #333;
-  margin-bottom: 16px;
-  text-align: center;
-}
 
 .repositories-section ul li a {
   color: #333;
@@ -206,5 +210,6 @@ body {
 
 .events-list li {
   padding: 8px 0;
+  font-size: .8rem;
   border-bottom: 1px solid #333;
 }
