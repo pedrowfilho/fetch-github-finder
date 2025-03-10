@@ -43,19 +43,18 @@ const screen = {
 
             const repoName = event.repo.name
             const eventType = event.type
-            let messages = "Sem mensagens registradas."
+            let messages = ""
     
             if (event.payload.commits) {
                 for (let i = 0; i < event.payload.commits.length; i++) {
-                    messages += event.payload.commits[i].message + "<br>"
+                    messages += event.payload.commits[i].message
                 }
             }
             if (eventType === "PushEvent") {
                 eventItem.innerHTML = `<strong>${repoName}</strong> - ${messages}`
-                messages = `Repositório ${event.repo.name} criado.`
             }
             if(eventType === "CreateEvent"){
-                eventItem.innerHTML = `${messages}`
+                eventItem.innerHTML = `<strong>${repoName}</strong> - Sem mensagens registradas`
             }
             eventsList.appendChild(eventItem)
         })
