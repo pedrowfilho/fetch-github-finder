@@ -1,4 +1,4 @@
-# Interactive Rating Component
+# Fetch GitHub Finder
 ![](./src/images/desktop.gif)
 
 <!-- ### Links -->
